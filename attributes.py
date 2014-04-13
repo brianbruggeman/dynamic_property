@@ -1,19 +1,12 @@
 #!/usr/bin/env python
 
 from Attribute import Attribute
-from mixins import LockableMixin, EnableMixin, RenderableMixin
+from mixins import LockableMixin
 
 
 class LockableAttribute(Attribute, LockableMixin):
     pass
 
-
-class EnabledAttribute(Attribute, EnableMixin):
-    pass
-
-
-class RenderableAttribute(Attribute, RenderableMixin):
-    pass
 
 if __name__ == "__main__":
     attr = LockableAttribute(1)

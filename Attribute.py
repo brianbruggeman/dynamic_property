@@ -9,7 +9,7 @@ class Attribute(object):
     def value(self):
         attr = "__value__"
         if not hasattr(self, attr):
-            setattr(self, attr, False)
+            setattr(self, attr, None)
         return getattr(self, attr)
 
     @value.setter
